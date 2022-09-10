@@ -1,32 +1,26 @@
 <template>
- <div class="main">
-  <div
-    class="car__content"
-  >
-
-    <connexion-pro></connexion-pro>
-  </div>
- </div>
+  <router-view />
 </template>
 
-<script>
-import ConnexionPro from './components/ConnexionPro.vue';
-  
-export default {
-  name: "App",
-  components: {
-    ConnexionPro
-},
-};
-</script>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-<style lang="scss">
-  html, .main{
-    background: #eaeaea;
-  }
-  .main{
-    height: 100vh;
-    width: 100%;
-  }
+nav {
+  padding: 30px;
+}
 
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>

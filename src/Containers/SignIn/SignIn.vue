@@ -8,49 +8,60 @@
         <div class="content__form-input">
           <div class="content__label-input">
             <label for="mail" class="label-connexion">Email</label>
-            <a-input id="mail" class="input-connexion" placeholder="Your email..." />
+            <a-input
+              id="mail"
+              class="input-connexion"
+              placeholder="Your email..."
+            />
           </div>
           <div class="content__label-input">
             <label for="password" class="label-connexion">Password</label>
-            <a-input-password class="input-connexion" placeholder="Your password" />
+            <a-input-password
+              class="input-connexion"
+              placeholder="Your password"
+            />
           </div>
           <div class="container-btn">
-            <button class="btn-connexion">
-              Connexion
-            </button>
-            <p class="info">If you don't have a acount, please <a href="">Sing Up here</a></p>
+            <button class="btn-connexion">Connexion</button>
+            <p class="info">
+              If you don't have a acount, please
+              <router-link to="/signUp">Sing Up here</router-link>
+            </p>
           </div>
         </div>
       </div>
       <div class="content__img">
         <figure>
-          <img src="../assets/connexion.jpg" alt="image de voiture pour le connexion" class="img-connexion" />
+          <img
+            src="../../assets/connexion.jpg"
+            alt="image de voiture pour le connexion"
+            class="img-connexion"
+          />
         </figure>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: "ConnexionComponent"
-}
+  name: "ConnexionComponent",
+};
 </script>
 
 <style lang="scss" scoped>
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@700&display=swap");
 .connexion {
-  margin: 50px 7%;
-  background: #FFFFFF;
+  margin: auto;
+  background: #ffffff;
   min-height: 650px;
-
-
-  border: 1px solid #D6D6D6;
+  width: 1250px;
+  border: 1px solid #d6d6d6;
   border-radius: 6px;
 }
-
+h1 {
+  margin: 0;
+}
 .container-btn {
   display: block;
   text-align: center;
@@ -60,19 +71,18 @@ export default {
 .title {
   text-align: center;
   margin-top: 0.5em;
-  font-family: 'Noto Sans Balinese', sans-serif;
-
+  font-family: "Noto Sans Balinese", sans-serif;
 }
 
 h1 {
-  color: #A33100;
+  color: #a33100;
   font-size: 36px;
 }
 
 .input-connexion {
   width: 330px;
   height: 40px;
-  background: #F5F9F9;
+  background: #f5f9f9;
   border-radius: 10px;
 }
 
@@ -82,16 +92,16 @@ h1 {
 }
 
 .btn-connexion {
-  color: #FFFFFF;
+  color: #ffffff;
 
   width: 147px;
   height: 50px;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #A33100;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #a33100;
 
   box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-
 }
 
 .img-connexion {
@@ -101,13 +111,10 @@ h1 {
   transform: scaleX(-1);
 }
 
-
 .info {
   margin-top: 30px;
   font-style: italic;
 }
-
-
 
 .content {
   display: flex;
@@ -115,6 +122,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 40px 100px;
 
   &__form,
   &__img {
@@ -141,7 +149,7 @@ h1 {
   &__img {
     flex-grow: 1;
 
-    @media screen and (max-width: 1142px) {
+    @media screen and (max-width: 1242px) {
       display: none;
     }
   }
