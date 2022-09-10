@@ -1,29 +1,32 @@
 <template>
+ <div class="main">
   <div
-    class="butn"
-    :style="{ background: 'rgb(190, 200, 200)', padding: '26px 16px 16px' }"
+    class="car__content"
   >
-    <a-button class="butn__primary" type="primary" ghost>Primary</a-button>
-    <a-button ghost>Default</a-button>
-    <a-button type="dashed" ghost>Dashed</a-button>
-    <a-button type="primary" danger ghost>Danger</a-button>
+
+    <connexion-pro></connexion-pro>
   </div>
+ </div>
 </template>
 
 <script>
+import ConnexionPro from './components/ConnexionPro.vue';
+  
 export default {
   name: "App",
-  components: {},
+  components: {
+    ConnexionPro
+},
 };
 </script>
 
 <style lang="scss">
-.butn {
-  display: flex;
-  flex-direction: column;
-
-  &__primary {
-    margin: 90px;
+  html, .main{
+    background: #eaeaea;
   }
-}
+  .main{
+    height: 100vh;
+    width: 100%;
+  }
+
 </style>
