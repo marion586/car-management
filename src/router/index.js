@@ -13,6 +13,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../Pages/SignUp/SignUp.vue"),
   },
+  {
+    path: "/homePath",
+    name: "home",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../Pages/Home/Home.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
