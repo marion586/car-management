@@ -53,11 +53,10 @@ export default {
 <style scoped>
 .card-list {
   display: flex;
-  gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
   border: 1px solid #d9d9d9;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
 }
 </style>

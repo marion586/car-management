@@ -5,11 +5,11 @@
         <img alt="example" :src="img" />
       </template>
       <template #actions>
-        <div>
+        <div class="card-item-car">
           <component :is="$antIcons['PlusCircleOutlined']" />
           <label for=""> Add</label>
         </div>
-        <div>
+        <div class="card-item-car">
           <component :is="$antIcons['EditOutlined']" />
           <label for=""> Details</label>
         </div>
@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss">
 .ant-card-body {
-  padding: 5px !important;
+  padding: 10px !important;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -81,5 +81,12 @@ export default {
 }
 .ant-card-head-title {
   font-weight: bold;
+}
+.card-item-car {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 </style>
